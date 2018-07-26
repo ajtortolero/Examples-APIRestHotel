@@ -20,4 +20,16 @@ Gets all the available Hotels.
 
 ### GET /GetById/:id
 
-Obtains an Hotel given its id.
+Obtains a Hotel given its Id.
+
+### POST /Add
+
+Add New Hotel
+
+### POST /UpdateById/:id
+
+UPDATE a Hotel by Id.
+
+### POST /DeleteById/:id
+
+DELETE a Hotel by Id.
