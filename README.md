@@ -2,15 +2,15 @@
 
 An example about how to create a Examples-APIRestHotel
 
-## Installation
+## Installation API
 
-1.  Install Dependencies
+1. Install Dependencies 
 
     * [Node.js (version 6.x is recommended)](https://nodejs.org/en/)
 
-3.  Go to the project's root directory **cd /my/path/to/directory**
-4.  Run **npm install**
-5.  Start using it! **npm start**
+3. Go to the project's root directory **cd /api/**
+4. Run **npm install**
+5. Start using it! **npm start**
 
 ## Available end-points
 
@@ -33,3 +33,20 @@ UPDATE a Hotel by Id.
 ### POST /DeleteById/:id
 
 DELETE a Hotel by Id.
+
+
+## Installation WEB
+
+1. Install Dependencies 
+
+    * [Node.js (version 6.x is recommended)](https://nodejs.org/en/)
+
+3. Go to the project's root directory **cd /web/**
+4. Run **npm install**
+
+## Run WEB
+
+1. Go to the project's root directory **cd /web/**
+2. Run npm start --open
+
+
