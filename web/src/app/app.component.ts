@@ -16,11 +16,11 @@ export class AppComponent implements OnInit {
     public pTranslateService: TranslateService,
     private pDataService: DataService
   ) {
-    pTranslateService.addLangs(['en', 'fr']);
+    pTranslateService.addLangs(['en', 'es']);
     pTranslateService.setDefaultLang('en');
 
     const objBrowserLang = pTranslateService.getBrowserLang();
-    pTranslateService.use(objBrowserLang.match(/en|fr/) ? objBrowserLang : 'en');
+    pTranslateService.use(objBrowserLang.match(/en|es/) ? objBrowserLang : 'en');
   }
 
   ngOnInit() {

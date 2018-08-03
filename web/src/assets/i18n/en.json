@@ -1,6 +1,5 @@
 {
-  "HOME": {
-    "TITLE": "Hello Angular with ngx-translate!",
-    "SELECT": "Change language"
-  }
+  "TITLE.FILTER": "Filter",
+  "TITLE.ALLSTAR": "All Starts",
+  "TITLE.STAR": "Starts"
 }

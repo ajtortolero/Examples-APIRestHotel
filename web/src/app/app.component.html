@@ -2,26 +2,53 @@
   <div class="col-xs-12 col-md-3">
     <section class="section-search item-search">
       <article class="search">
-        <div class="search-left">
-            
+        <div class="search-title">
+          {{ 'TITLE.FILTER' | translate }}
         </div>
-        <div class="search-center">
-          <div class="content-center-child">
-            <div class="content-center-child-item header"></div>
-            <div class="content-center-child-item center content-center-child-grow fill-area">
-              <div class="content-center-child-grow fill-area-content">
-
-              </div>
-            </div>
-            <div class="content-center-child-item footer"></div>
-          </div>
+        <div class="search-box">
+          
         </div>
-        <div class="search-right">
-          <div class="content-right-child">
-            <div class="content-right-child-item center content-right-child-grow fill-area"></div>
-            <div class="content-right-child-item center content-right-child-grow fill-area"></div>
-            <div class="content-right-child-item center content-right-child-grow fill-area"></div>
+        <div class="search-bottom">
+          <div class="stars">
+            <span class="stars blue">
+              <div class="stars icon icon-star blue"></div>
+              {{ 'TITLE.STAR' | translate }}
+            </span>              
           </div>
+          <div class="stars">
+            <input type="checkbox" id="chkStartFive" value="5">
+            <span>{{ 'TITLE.ALLSTAR' | translate }}</span>
+          </div>          
+          <div class="stars">
+            <input type="checkbox" id="chkStartFive" value="5">
+            <span class="stars" *ngFor="let item of fnGetArray(5); let i = index;">
+              <div class="stars icon icon-star yellow"></div>
+            </span>
+          </div>
+          <div class="stars">
+            <input type="checkbox" id="chkStartFour" value="4">
+            <span class="stars" *ngFor="let item of fnGetArray(4); let i = index;">
+              <div class="stars icon icon-star yellow"></div>
+            </span>
+          </div>
+          <div class="stars">
+            <input type="checkbox" id="chkStartThree" value="3">
+            <span class="stars" *ngFor="let item of fnGetArray(3); let i = index;">
+              <div class="stars icon icon-star yellow"></div>
+            </span>
+          </div>
+          <div class="stars">
+            <input type="checkbox" id="chkStartTwo" value="2">
+            <span class="stars" *ngFor="let item of fnGetArray(2); let i = index;">
+              <div class="stars icon icon-star yellow"></div>
+            </span>
+          </div> 
+          <div class="stars">
+            <input type="checkbox" id="chkStartOne" value="1">
+            <span class="stars" *ngFor="let item of fnGetArray(1); let i = index;">
+              <div class="stars icon icon-star yellow"></div>
+            </span>
+          </div>                                             
         </div>
       </article>
     </section>
@@ -33,13 +60,13 @@
             <img src="../assets/images/hotels/{{iteHotel.image}}" alt=""/>
         </div>
         <div class="feature-center">
-          <div class="content-center-child">
-            <div class="content-center-child-item header">
+          <div class="feature-center-child">
+            <div class="feature-center-child-item header">
                 {{iteHotel.name}}
             </div>
   
-            <div class="content-center-child-item center content-center-child-grow fill-area">
-                <div class="content-center-child-grow fill-area-content">
+            <div class="feature-center-child-item center feature-center-child-grow fill-area">
+                <div class="feature-center-child-grow fill-area-content">
                   <div class="stars">
                     <span class="stars" *ngFor="let item of fnGetArray(iteHotel.stars); let i = index;">
                       <div class="stars icon icon-star"></div>
@@ -53,16 +80,16 @@
                 </div>
             </div>
   
-            <div class="content-center-child-item footer">
+            <div class="feature-center-child-item footer">
                 
             </div>
           </div>
         </div>
         <div class="feature-right">
-          <div class="content-right-child">
-            <div class="content-right-child-item center content-right-child-grow fill-area"></div>
-            <div class="content-right-child-item center content-right-child-grow fill-area"></div>
-            <div class="content-right-child-item center content-right-child-grow fill-area"></div>
+          <div class="feature-right-child">
+            <div class="feature-right-child-item center feature-right-child-grow fill-area"></div>
+            <div class="feature-right-child-item center feature-right-child-grow fill-area"></div>
+            <div class="feature-right-child-item center feature-right-child-grow fill-area"></div>
           </div>
         </div>
       </article>
