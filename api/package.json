@@ -1,0 +1,27 @@
+{
+  "name": "hotel",
+  "version": "1.0.0",
+  "description": "API Rest Hotel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajtortolero/Examples-APIRestHotel.git"
+  },
+  "author": "Alejandro Tortolero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajtortolero/Examples-APIRestHotel/issues"
+  },
+  "homepage": "https://github.com/ajtortolero/Examples-APIRestHotel#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "faker": "^4.1.0",
+    "lodash": "^4.17.10",
+    "underscore": "^1.9.1"
+  }
+}
